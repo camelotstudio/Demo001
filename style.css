@@ -22,7 +22,7 @@
     padding: 0 !important;
 }
 .list{
-    opacity:.5;
+    opacity:0.5;
 }
 .navbar-fix{
     overflow: hidden;
@@ -79,10 +79,67 @@
     padding-bottom: 150px; 
 }
 
+.team-padding{
+    padding-bottom: 150px;     
+}
+
+.map-title{
+    padding-top: 130px;
+    padding-bottom: 20px;
+    text-align: left; 
+}
+
 .map-padding{
-    padding: 100px 0 100px 0;
+    padding: 0 0 100px 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
+
+.map-bg{
+    background-color:#FFF;
+    padding: 5px;
+}
+.white{
+    color: #FFF;
+}
+
+.email-input{
+    background-color: rgba(0,0,0,0);
+    border-color: #FFF !important;
+    border-style: solid;
+    border-width:2px;
+    border-radius:3px;
+    color: #FFF;
+    font-size:14px;
+    line-height: 16px;
+    text-transform:none;
+    padding:15px 20px 15px 20px;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.btn-submit{
+    font-size:12px;
+    font-style: normal;
+    letter-spacing:2.5px;
+    text-transform: uppercase;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+::placeholder {
+    color: #FFF;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #FFF;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #FFF;
+  }
+  
