@@ -4,6 +4,7 @@
 .logo{
     letter-spacing: .5em;
     font-size: 2em;
+    padding-right: 1.5em; 
 }
 .page-list{
     list-style:none;
@@ -76,7 +77,6 @@
 /****/
 .bg-color{
     background-color: #011f41;
-    padding-bottom: 150px; 
 }
 
 .team-padding{
@@ -105,7 +105,7 @@
     color: #FFF;
 }
 
-.email-input{
+.input-style{
     background-color: rgba(0,0,0,0);
     border-color: #FFF !important;
     border-style: solid;
@@ -143,3 +143,66 @@
    color: #FFF;
   }
   
+  /* footer */
+@media screen and (min-width: 769px) {
+     .footer{
+         padding:50px 100px;
+        }
+}
+@media screen and (min-width: 600px) {
+    .footer{
+        padding:50px 70px;
+        display: table;
+    }
+}
+.footer{
+    padding:50px 40px;
+    display: table;
+    background-color:#FFF; 
+    width: 100%;
+}
+
+
+  .footer-menu a{
+      font-size: .6em;
+      letter-spacing:.2em;
+      transition:color 300ms;
+      text-transform :uppercase;
+      text-decoration:none;
+      font-weight: bolder;
+  }
+  .footer-menu li {
+    margin-top:20px;
+    line-height: 1;
+}
+.footer-menu{
+    list-style: none;
+    color: #FFF !important;
+    margin: 0;
+    padding: 0 !important;;
+}
+
+.footer .info ul{
+    float: right;
+    margin:0 -6px 7px 0;
+    padding:75px 0 0 0;
+    text-align:right;
+}
+.footer .info li a{
+    color: #343a40;
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    text-indent:0.5em;
+    transition: color 300ms;
+}
+.copyright{
+    float: right;
+    clear: right;
+    color: #343a40;
+    font-size: .65em;
+    letter-spacing: .3px;
+    margin: 63px 0 0;
+    text-align: right;
+}
