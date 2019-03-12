@@ -23,11 +23,10 @@ $(function() {
         event.preventDefault();
     });
 });
-
-$('.nav .nav-link').click(function(){
-    if($(window).width() <= 768){
-        $('.navbar-toggler').trigger('click');
-    }
+$(function() {
+$('.nav-link').click(function(){
+    $('.navbar-collapse').removeClass("show");
+});
 });
 // //jQuery to collapse the navbar on scroll
 // $(window).scroll(function() {
