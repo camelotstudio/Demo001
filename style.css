@@ -6,15 +6,16 @@
     font-size: 2em;
     padding-right: 1.5em; 
 }
-.page-list{
-    list-style:none;
-    text-align:right;
-    font-size: 1em;
 
+
+.lead{
+    padding-bottom: 4em;
+    text-align: right;
 }
-.nav-item a{
-    color:#FFF !important;
+.display-4{
+    text-align: right;
 }
+
 .list-line{
     list-style:none;
     font-size: 1em;
@@ -206,3 +207,14 @@
     margin: 63px 0 0;
     text-align: right;
 }
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
