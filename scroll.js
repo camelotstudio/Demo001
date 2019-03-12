@@ -24,7 +24,11 @@ $(function() {
     });
 });
 
-
+$('.nav .nav-link').click(function(){
+    if($(window).width() <= 768){
+        $('.navbar-toggler').trigger('click');
+    }
+});
 // //jQuery to collapse the navbar on scroll
 // $(window).scroll(function() {
 //     if ($(".navbar").offset().top > 100) {
