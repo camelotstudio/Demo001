@@ -5,320 +5,268 @@
     <link rel="stylesheet" href="bootstrap4/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <script src="jq/jquery-1.12.4.min.js"></script>
+    <script src="jq/jquery-ui.min.js"></script>
+    <script src="scroll.js"></script>
     <script src="bootstrap4/js/bootstrap.js"></script>
     <link href="fontawesome5/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome5/css/brands.css" rel="stylesheet">
     <link href="fontawesome5/css/solid.css" rel="stylesheet">
 </head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="container">
-                  <a class="navbar-brand logo" href="#">LOGO</a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="nav navbar-nav ml-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#Characteristic">特色說明
-                              <span class="sr-only">(current)</span>
-                            </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#text">純標題跟文字</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#team">團隊介紹</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#map">聯絡我們</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-              
-    <header>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
-                <!-- Slide One -->
-                <div class="carousel-item active" style="background-image: url('images/windoge.jpg')">
-                  <div class="carousel-caption">
-                    <h2 class="display-4">First Slide</h2>
-                    <p class="lead">This is a description for the first slide.</p>
-                  </div>
-                </div>
-                <!-- Slide Two -->
-                <div class="carousel-item" style="background-image: url('images/windoge.jpg')">
-                  <div class="carousel-caption">
-                    <div class="carousel-caption">
-                        <h2 class="display-4">First Slide</h2>
-                        <p class="lead">This is a description for the first slide.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Slide Three  -->
-                <div class="carousel-item" style="background-image: url('images/windoge.jpg')">
-                    <div class="carousel-caption">
-                        <h2 class="display-4">Third Slide</h2>
-                        <p class="lead">This is a description for the third slide.</p>
-                    </div>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation">
+        <div class="container">
+                <a class="navbar-brand logo" href="#">LOGO</a>
+            <div class="page-scroll">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="nav-item">
+                        <a class="page-scroll nav-link" href="#Characteristic">特色說明</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="page-scroll nav-link" href="#text">純標題跟文字</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="page-scroll nav-link" href="#team">團隊介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="page-scroll nav-link" href="#map">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </header>
-    <!-- 
-    <div class=" bg">
-    <header class="navbar navbar-expand navbar-dark flex-md-row bd-navbar">
-    <div class="logo">LOGO</div>
-    <div class="navbar-nav-scroll">
-        <ul class="navbar-nav bd-navbar-nav flex-row">
-            <li class="nav-item">
-                <a class="nav-item-padding" href=""><i class="fab fa-2x fa-facebook-f"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item-padding" href="">
-                    <i class="fab fa-2x fa-instagram"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item-padding" href="">
-                    <i class="fab fa-2x fa-line"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item-padding" href="">
-                    <i class="fab fa-2x fa-weixin"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item-padding" href="">
-                    <i class="fab fa-2x fa-twitter"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
+        <!-- /.container -->
+    </nav>
 
-    </header>
-    <!--fix bottom bar-->
-    <!--
-    <div class="navbar-fix">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-    </div>
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                      <!-- Slide One -->
+                      <div class="carousel-item active" style="background-image: url('images/windoge.jpg')">
+                        <div class="carousel-caption">
+                          <h2 class="display-4">WOW Doge~</h2>
+                          <p class="lead">內容</p>
+                        </div>
+                      </div>
+                      <!-- Slide Two -->
+                      <div class="carousel-item" style="background-image: url('images/windoge.jpg')">
+                        <div class="carousel-caption">
+                          <div class="carousel-caption">
+                                <h2 class="display-4">WOW Doge~</h2>
+                                <p class="lead">內容</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slide Three  -->
+                      <div class="carousel-item" style="background-image: url('images/windoge.jpg')">
+                          <div class="carousel-caption">
+                                <h2 class="display-4">WOW Doge~</h2>
+                                <p class="lead">內容</p>
+                              <p class="lead"><a class="btn btn-default page-scroll" href="#Characteristic">Click Me to Scroll Down!</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            
+    </section>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-5 align-middle" style="padding-top:18%;text-align: right;font-size: 12em;">DE</div>
-            <div class="col-xl-2 align-middle">
-                <div>
-                    <img src="images/doge.png" style="padding-top:60%;text-align: center;width: 20em;" alt="">
-                </div>  
-            </div>
-            <div class="col-xl-3 align-middle" style="padding-top:18%;text-align: center;font-size: 12em;">MO</div>
-
-            <div class="col-xl-2">
- 
-                        <ul class="page-list">
-                            <li class="">DEMOoo</li>
-                            <li class="list">DEMO</li>
-                            <li class="list">DEMOoooo</li>
-                            <li class="list">DEMOoooo</li>
-                        </ul>
+    <!-- About Section -->
+    <section id="Characteristic" class="characteristic-section">
+            <div class="container" id="Characteristic">
+                    <div class="sec-title">
+                        <h2 class="title-style">Doge-Characteristic</h2>
                     </div>
-
+                    <div class="row icon-padding">
+                        <div class="col-md-3 col-s-4 col-sm-6">
+                            <div class="explain">
+                                <i class="fas fa-3x fa-adjust explain-icon"></i>
+                                <div>
+                                    <h4>Adjust</h4>
+                                    <p>內容</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-s-4 col-sm-6">
+                                <div class="explain">
+                                        <i class="fas fa-3x fa-check-double explain-icon"></i>
+                                    <div>
+                                        <h4>Check Double</h4>
+                                        <p>內容</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-md-3 col-s-4 col-sm-6">
+                            <div class="explain">
+                                    <i class="fab fa-3x fa-apple explain-icon"></i>
+                                    <div>
+                                        <h4>Apple</h4>
+                                        <p>內容</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-s-4 col-sm-6">
+                                <div class="explain">
+                                    <i class="fab fa-3x fa-android explain-icon"></i>
+                                    <div>
+                                        <h4>Android</h4>
+                                        <p>內容</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
-        </div>
-    </div>
-</div>-->
-<!-- 特色說明 -->
-<script>
+    </section>
 
-
-        </script>
-<div class="container" id="Characteristic">
-    <div class="sec-title">
-        <h2 class="title-style">Doge-Characteristic</h2>
-    </div>
-    <div class="row icon-padding">
-        <div class="col-md-3 col-s-4 col-sm-6">
-            <div class="explain">
-                <i class="fas fa-3x fa-adjust explain-icon"></i>
-                <div>
-                    <h4>Adjust</h4>
+    <!-- text Section -->
+    <section id="text" class="text-section">
+        <div class="container-fluid bg-color" style="padding-bottom: 150px;">
+            <div class="sec-title">
+                <div class="title-style-w">
+                    <h2>Doge-Characteristic</h2>
                     <p>內容</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-s-4 col-sm-6">
-                <div class="explain">
-                        <i class="fas fa-3x fa-check-double explain-icon"></i>
-                    <div>
-                        <h4>Check Double</h4>
-                        <p>內容</p>
-                    </div>
-                </div>
-        </div>
-        <div class="col-md-3 col-s-4 col-sm-6">
-            <div class="explain">
-                    <i class="fab fa-3x fa-apple explain-icon"></i>
-                    <div>
-                        <h4>Apple</h4>
-                        <p>內容</p>
-                    </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-s-4 col-sm-6">
-                <div class="explain">
-                    <i class="fab fa-3x fa-android explain-icon"></i>
-                    <div>
-                        <h4>Android</h4>
-                        <p>內容</p>
-                    </div>
-                </div>
-        </div>
-    </div>
-</div>
-<!-- 純標題跟文字-->
-<div id="text" class="container-fluid bg-color" style="padding-bottom: 150px;">
-    <div class="sec-title">
-        <div class="title-style-w">
-            <h2>Doge-Characteristic</h2>
-            <p>內容</p>
-        </div>
-    </div>
-</div>
-<!-- 團隊介紹 -->
-<div id="team" class="container team-padding">
-        <div class="sec-title">
-            <h2 class="title-style">Doge-Team</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-s-4 col-sm-6">
-                <div class="explain">
-                    <img src="images/doge.png" style="width:100%;" alt="">
-                    <div>
-                        <h4>Doge</h4>
-                        <p>內容</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-s-4 col-sm-6">
-                    <div class="explain">
-                        <img src="images/doge.png" style="width:100%;" alt="">
-                        <div>
-                            <h4>Doge</h4>
-                            <p>內容</p>
-                        </div>
-                    </div>
-            </div>
-            <div class="col-md-3 col-s-4 col-sm-6">
-                <div class="explain">
-                    <img src="images/doge.png" style="width:100%;" alt="">
-                    <div>
-                        <h4>Doge</h4>
-                        <p>內容</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-s-4 col-sm-6">
-                    <div class="explain">
-                        <img src="images/doge.png" style="width:100%;" alt="">
-                        <div>
-                            <h4>Doge</h4>
-                            <p>內容</p>
-                        </div>
-                    </div>
-            </div>
-        </div>
-</div>
-<!-- 地圖 -->
-<div id="map" class="map-padding" style="background-image: url(images/bg.jpg);">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-s-6 col-sm-12">
-                <div class="map-title"><h2 class="title-style-w">立即訂閱</h2></div>
-                <form>
-                    <input class="input-style" aria-required="true" aria-invalid="false" placeholder="輸入姓名">
-                    <input class="input-style" aria-required="true" aria-invalid="false" placeholder="輸入信箱">
-                    <input type="submit" value="立即訂閱" class="btn-submit btn btn-light">
-                </form>
-            </div>
-        <div class="col-md-4 col-s-6 col-sm-12">
-            <div class="map-title"><h2 class="title-style-w">聯絡我們</h2></div>
-            <div class="white">
-            <p>E-Mail：google@gmail.com</p>
-            <p>phone：02-25415411</p>
-            <p>Address：asdasdasdad</p>
-            </div>
-        </div>
+    </section>
 
-        <div class="col-md-4 col-s-12">
-            <div class="map-title"><h2 class="title-style-w">拜訪我們</h2></div>
-            <div class="map-bg">
-                <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=http://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=漢神巨蛋購物廣場&z=16&output=embed&t=></iframe>
+    <!-- team Section -->
+    <section id="team" class="team-section">
+        <div class="container team-padding">
+                    <div class="sec-title">
+                        <h2 class="title-style">Doge-Team</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-s-4 col-sm-6">
+                            <div class="explain">
+                                <img src="images/doge.png" style="width:100%;" alt="">
+                                <div>
+                                    <h4>Doge</h4>
+                                    <p>內容</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-s-4 col-sm-6">
+                                <div class="explain">
+                                    <img src="images/doge.png" style="width:100%;" alt="">
+                                    <div>
+                                        <h4>Doge</h4>
+                                        <p>內容</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-md-3 col-s-4 col-sm-6">
+                            <div class="explain">
+                                <img src="images/doge.png" style="width:100%;" alt="">
+                                <div>
+                                    <h4>Doge</h4>
+                                    <p>內容</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-s-4 col-sm-6">
+                                <div class="explain">
+                                    <img src="images/doge.png" style="width:100%;" alt="">
+                                    <div>
+                                        <h4>Doge</h4>
+                                        <p>內容</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
             </div>
-        </div>
-        </div>
-    </div>
-</div>
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="row">
-        <div class="col-md-6 col-sm-12">
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div id="map" class="map-padding" style="background-image: url(images/bg.jpg);">
             <div class="container">
-                <ul class="footer-menu">
-                    <li><a class="text-dark" href="#">特色說明</a></li>
-                    <li><a class="text-dark" href="#">純標題跟文字</a></li>
-                    <li><a class="text-dark" href="#">團隊介紹</a></li>
-                    <li><a class="text-dark" href="#">聯絡我們</a></li>
-                    </ul>
-            </div>
-        </div>
-        <div class="col-md-6 col-sm-12 info">
-                <div class="navbar-nav-scroll">
-                        <ul class="navbar-nav bd-navbar-nav flex-row">
-                            <li>
-                                <a class=""" href=""><i class="fab fa-2x fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a class="" href="">
-                                    <i class="fab fa-2x fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="" href="">
-                                    <i class="fab fa-2x fa-line"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="" href="">
-                                    <i class="fab fa-2x fa-weixin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="" href="">
-                                    <i class="fab fa-2x fa-twitter"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    <div class="copyright">
-                            Copyright © 2019 Camelot Studio inc. All Rights Reserved.
+                <div class="row">
+                    <div class="col-md-4 col-s-6 col-sm-12">
+                        <div class="map-title"><h2 class="title-style-w">立即訂閱</h2></div>
+                        <form>
+                            <input class="input-style" aria-required="true" aria-invalid="false" placeholder="輸入姓名">
+                            <input class="input-style" aria-required="true" aria-invalid="false" placeholder="輸入信箱">
+                            <input type="submit" value="立即訂閱" class="btn-submit btn btn-light">
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-s-6 col-sm-12">
+                        <div class="map-title"><h2 class="title-style-w">聯絡我們</h2></div>
+                        <div class="white">
+                        <p>E-Mail：google@gmail.com</p>
+                        <p>phone：02-25415411</p>
+                        <p>Address：asdasdasdad</p>
+                        </div>
+                    </div>        
+                    <div class="col-md-4 col-s-12">
+                        <div class="map-title"><h2 class="title-style-w">拜訪我們</h2></div>
+                        <div class="map-bg">
+                            <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=http://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=漢神巨蛋購物廣場&z=16&output=embed&t=></iframe>
+                        </div>
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
-</footer>
-
-
+    </section>
+    <footer class="footer">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="container">
+                        <ul class="footer-menu">
+                            <li><a class="text-dark" href="#">特色說明</a></li>
+                            <li><a class="text-dark" href="#">純標題跟文字</a></li>
+                            <li><a class="text-dark" href="#">團隊介紹</a></li>
+                            <li><a class="text-dark" href="#">聯絡我們</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 info">
+                        <div class="navbar-nav-scroll">
+                                <ul class="navbar-nav bd-navbar-nav flex-row">
+                                    <li>
+                                        <a class=""" href=""><i class="fab fa-2x fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="">
+                                            <i class="fab fa-2x fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="">
+                                            <i class="fab fa-2x fa-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="">
+                                            <i class="fab fa-2x fa-weixin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="">
+                                            <i class="fab fa-2x fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            <div class="copyright">
+                                    Copyright © 2019 Camelot Studio inc. All Rights Reserved.
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </footer>
 </body>
+
 </html>
